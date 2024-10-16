@@ -1,0 +1,113 @@
+/* General body styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, #000000, #333333); /* Black gradient background */
+    color: #ffffff; /* White text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    min-height: 100vh; /* Ensure the body takes full height of the viewport */
+}
+
+/* Tabs styles */
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #e6e6e6;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.tabs ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.tabs li {
+    margin: 0 15px;
+}
+
+.tabs a {
+    color: #ff0000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tabs a:hover {
+    color: #ffffff;
+    background-color: #2e2e2e;
+}
+
+/* Title styles */
+.titleStyle2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.titleStyle2 h1 {
+    color: #8A2BE2; /* Purple title color */
+    font-size: 2.5em;
+}
+
+/* Content styles */
+.content {
+    max-width: calc(100% - 1200px); /* Allow 600px space on each side */
+    text-align: left; /* Align text to the left */
+    margin: 20px auto; /* Center the content */
+    padding: 0 20px; /* Add some padding */
+}
+
+.content p {
+    color: #e6e6e6; /* Light gray text */
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .content {
+        max-width: 100%; /* Take full width on smaller screens */
+        padding: 0 10px; /* Adjust padding */
+    }
+
+    .titleStyle2 h1 {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+
+    .tabs a {
+        font-size: 1em; /* Adjust font size for tabs */
+    }
+}
+
+@media (max-width: 480px) {
+    .titleStyle2 h1 {
+        font-size: 1.8em; /* Further adjust for very small screens */
+    }
+
+    .tabs a {
+        font-size: 0.9em; /* Smaller font for mobile */
+    }
+}
+
+/* Existing styles remain unchanged */
+
+/* Active tab styles */
+.tabs a.active {
+    color: #ffffff; /* White text for the active tab */
+    background-color: #ff0000; /* Red background for the active tab */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6); /* Glow effect */
+}
+
+/* Optional: To enhance visibility of the hover effect for other tabs */
+.tabs a:hover {
+    color: #ffffff; /* White text when hovered */
+    background-color: #2e2e2e; /* Dark background when hovered */
+}
+
